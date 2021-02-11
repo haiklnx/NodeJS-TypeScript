@@ -23,6 +23,7 @@ const pessoas = [
 const ex2 = pessoas.map(obj => obj.nome)
 console.log(ex2);
 
+// A desestruturação aqui precisa estar entre (), caso contrario sera retornado undefined
 const ex3 = pessoas.map(obj => ({idade: obj.idade}));
 console.log(ex3);
 

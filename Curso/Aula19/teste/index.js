@@ -4,7 +4,7 @@ function meuEscopo(){
     const pessoas = [];
 
     function recebeEventoForm(evento){
-        evento.preventDefault();
+        evento.preventDefault(); // retira o comportamente padrão do evento
         const nome = form.querySelector('.nome')
         const sobrenome = form.querySelector('.sobrenome')
         const peso = form.querySelector('.peso')
@@ -27,6 +27,8 @@ function meuEscopo(){
         console.log(pessoas);
     };
 
+    //função que capta os eventos ocorrentes no formulário e executa uma
+    // funação caso o evento em questão seja disparado
     form.addEventListener('submit', recebeEventoForm);
 };
 

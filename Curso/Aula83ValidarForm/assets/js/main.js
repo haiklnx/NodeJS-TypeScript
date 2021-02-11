@@ -24,16 +24,15 @@ class ValidaFormulario {
     isValidPassword() {
         const senha = this.formulario.querySelector('.senha')
         const repetirSenha = this.formulario.querySelector('.repetir-senha')
-        if(senha.value !== repetirSenha.value){
-            alert(senha.value)
-            alert(repetirSenha.value)
-            this.criaErro(senha, 'Senha não confere');
-            this.criaErro(repetirSenha, 'Senha não confere');
+        
+        if(senha.value.length < 6 || senha.value.length > 12) {
+            this.criaErro(senha, 'Senha precisa ter entre 6 e 12 caracteres');
             return false;
         }
 
-        if(senha.value.length < 6 || senha.value.length > 12) {
-            this.criaErro(senha, 'Senha precisa ter entre 6 e 12 caracteres');
+        if(senha.value !== repetirSenha.value){
+            this.criaErro(senha, 'Senha não confere');
+            this.criaErro(repetirSenha, 'Senha não confere');
             return false;
         }
 

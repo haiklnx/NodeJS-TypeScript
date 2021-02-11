@@ -13,9 +13,10 @@ console.log(array)
 // const a = nomes *Nao faz a copia // vão apontar pro mesmo lugar na memória
 
 const l1 = [1,2,3];
-const l2 = [...l1];
+const l2 = [...l1]; // faz a cópia de l1
 const l3 = [1,2,3,4,5,6,7,8,9];
-const l4 = l3.slice(0,3); // usado para terminado incio e fim dos indices do array que deseja
+const l4 = l3.slice(0,3); // usado para selecionar dados
+// específicos de um array.. incio e fim dos indices do array que deseja
 const nome = 'Gabriel Ferreira Leite Monteiro';
 const nomeEmArray = nome.split(' ');
 const unirArray = nomeEmArray.join(' ');

@@ -15,6 +15,7 @@ function Camisa (nome,preco,cor){
     this.cor = cor;
 }
 
+// faz o link dos prototypes e mantem o constructor do objeto Camisa
 Camisa.prototype = Object.create(Produto.prototype)
 Camisa.prototype.constructor = Camisa
 

@@ -1,5 +1,8 @@
+// exercício utilizando os metodos do index.js da aula15
 const num = Number(prompt('Digite um numero:'));
 
+// 'document.getElementById' busca no Html o elemento com a id 
+// correspondente e armazena em uma variavel para ser trabalhada futuruamente.
 const numTitulo = window.document.getElementById('num-titulo');
 const texto = window.document.getElementById('texto');
 

@@ -10,10 +10,10 @@ f1 += 0.1; // 1.0
 
 console.log('Verificação de numeros')
 console.log(n1.toString(2)); // retora o valor binário
-console.log(n1.toFixed(2)); // arredondamento
+console.log(n1.toFixed(2)); // arredondamento com duas casa decimais depois da ','
 console.log(Number.isInteger(n1)); // verificar se é um inteiro
 console.log(Number.isInteger(n2)); 
-console.log(Number.isNaN(n3)); 
+console.log(Number.isNaN(n3)); // verificar se é um NaN
 
 
 console.log('para realiazar contas com precisão em floats')

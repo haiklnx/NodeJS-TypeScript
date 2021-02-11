@@ -1,3 +1,4 @@
+// atribuição de valores para variaveis
 let a = 'a'; // b
 let b = 'b'; // c
 let c = 'c'; // a

@@ -40,4 +40,4 @@ function conta(operador, acumulador, ...numeros){ // rest precisa ser o último
     console.log('total',acumulador);
 }
 
-conta('*', 1, 20,30,50)
+conta('+', 1, 20,30,50)

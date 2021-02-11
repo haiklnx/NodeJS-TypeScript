@@ -28,6 +28,8 @@ class DispositivoEletronico {
 // const dispotivo = new DispositivoEletronico('Lâmpada');
 class Smartphone extends DispositivoEletronico {
     constructor(nome,cor,modelo){
+        //sempre que tiver um constructor na classe pai o 
+        // metodo super() devera ser chamado no constructor do filho com os parametros
         super(nome); // Executa o construtor da classe pai DispositivoEletronico
 
         this.cor = cor;

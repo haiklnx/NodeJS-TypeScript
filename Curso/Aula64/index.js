@@ -7,7 +7,7 @@
 const numeros = [5,50,80,1,2,3,5,8,7,11,15,22,27];
 const ex1 = numeros.reduce((acumulador, valor, indice,array) => {
     acumulador += valor;
-    return acumulador; // Sempre vai retornar
+    return acumulador; // Sempre vai retornar, caso contrario NaN
 }, 0); // valor inicial do acumulador
 console.log(ex1);
 
@@ -27,7 +27,7 @@ console.log(ex3);
 const pessoas = [
     {nome: 'Luiz', idade: 62},
     {nome: 'Maria', idade: 23},
-        {nome: 'Eduardo', idade: 55},
+    {nome: 'Eduardo', idade: 55},
     {nome: 'Leticia', idade: 19},
     {nome: 'Rosana', idade: 76},
     {nome: 'Wallace', idade: 47},

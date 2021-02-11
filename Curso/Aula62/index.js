@@ -11,10 +11,11 @@ const numeros = [5,50,80,1,2,3,5,8,7,11,15,22,27];
 
 // nos parametros do filter ele passa (valor, indice, array)
 // filter((valor,indice,array) => {callback})
+// filter sempre vai retornar um booleano
 const filterNumeros = numeros.filter(valor => valor > 10);
 console.log(filterNumeros);
 
-//ex1  Retorne as pessoas que tem o nome com 5 letras ou mais
+//ex1  Retorne as pessoas que tem o nome com 7 letras ou mais
 //ex2 Retorne as pessoas com mais de 50 anos
 //ex3  Retorne as pessoas cujo o nome termina com a
 const pessoas = [

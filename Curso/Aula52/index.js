@@ -4,6 +4,7 @@ function rand(min = 1000, max = 3000){
     return Math.floor(num);
 }
 
+// o callback é uma função que vai ser executada após a finalização da função que a chamou
 function f1(callback){
     setTimeout((funcao) => {
         console.log('f1')

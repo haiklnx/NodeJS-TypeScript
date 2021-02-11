@@ -3,7 +3,7 @@
 //                0         1        2       3         4
 const nomes = ['gabriel', 'iara', 'maria', 'joao', 'rebeca'];
 
-// nomes.splice(índice, delete, add)
+//**** nomes.splice(índice, delete, add) ****
 
 //pop
 

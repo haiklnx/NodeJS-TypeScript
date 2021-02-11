@@ -15,9 +15,9 @@ Object.defineProperties (define várias propriedades) -> aula anterior
 
 /* para vericar os exemplos basta descomentar as linhas de acordo com a quebra de linha */
 const produto = {nome: 'caneca', preco: 3};
+
 // const copiaProduto = {...produto, material: 'inox',};
 // // const copiaProduto = Object.assign({}, produto, {material:'nano'}); // faz a copia do objeto
-
 // copiaProduto.nome = 'Pendrive';
 // copiaProduto.preco = 7;
 // console.log(produto);

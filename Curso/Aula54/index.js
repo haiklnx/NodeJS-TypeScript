@@ -10,7 +10,7 @@ function criaPessoa(nome,sobrenome ,idade, altura, peso){
         get nomeCompleto(){
             return `${this.nome} ${this.sobrenome}`;
         },
-        // seter adiciona 
+        // setter adiciona um valor
         set nomeCompleto(value){
             value = value.split(' ');
             this.nome = value.shift();
@@ -40,7 +40,7 @@ p1.nomeCompleto = 'wolf do mato';
 // console.log(p1.nome);
 // console.log(p1.sobrenome);
 console.log(p1.nomeCompleto);
-// console.log(p1.fala());
+console.log(p1.fala());
 // console.log(p1.imc());
-// console.log(p1.imc2);
+console.log(p1.imc2);
 

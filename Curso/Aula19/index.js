@@ -10,7 +10,8 @@
 //let b = a
 // a.push(4)
 //console.log(a,b) // vao apontar para o mesmo lugar na memória
-// para fazer uma seria:
+
+// para fazer uma copia:
 // let c = [...a] faz a copia do array a
 
 const pessoa = {

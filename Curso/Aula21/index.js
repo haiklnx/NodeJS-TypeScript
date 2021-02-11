@@ -1,3 +1,4 @@
+// comparações que sera retornardo true ou false (boolean)
 const comp = 5 > 3;
 const comp2 = 2 >= 3;
 const comp3 = 11 <= 8;

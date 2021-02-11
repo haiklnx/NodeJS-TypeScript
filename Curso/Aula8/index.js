@@ -1,3 +1,4 @@
+// Logando dados no console de algumas variaveis e contas.
 const nome = 'Gabriel';
 const idade = 29;
 const peso = 112;

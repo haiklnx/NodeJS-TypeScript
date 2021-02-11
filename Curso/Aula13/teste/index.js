@@ -1,3 +1,5 @@
+// exercícios utilizandos os metodos do arquivo da aula13 index.js
+
 const nome = window.prompt('Digite seu nome completo: ');
 const letras = nome.length;
 const segundaLetra = nome.charAt(1);

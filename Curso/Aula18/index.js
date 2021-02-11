@@ -1,3 +1,4 @@
+// criando um objeto que é definido por chave e valor, metodos
 const pessoa1 = {
     nome: 'Gabriel',
     idade: 29,
