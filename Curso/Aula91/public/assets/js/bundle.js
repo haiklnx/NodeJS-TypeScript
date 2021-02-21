@@ -1,0 +1,2 @@
+(()=>{"use strict";console.log("nome index -> ".concat("wolf")),console.log("nome modulo -> ".concat("gabriel")),console.log(8);var o=new function o(n,e){!function(o,n){if(!(o instanceof n))throw new TypeError("Cannot call a class as a function")}(this,o),this.nome=n,this.sobreNome=e}("gabriel","ferreira");console.log(o)})();
+//# sourceMappingURL=bundle.js.map
