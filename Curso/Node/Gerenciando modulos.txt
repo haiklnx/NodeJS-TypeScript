@@ -1,0 +1,25 @@
+upgrade, downgrade, install
+processo de gerenciamento de pacotes pelo npm
+
+caso a versão apareça como: ^4.12.5 -> significa que ela pode ser atualizada 
+    a qualquer momento
+
+
+^ -> vai atualizar a 'minor' e a 'patch'
+~ -> vai atualizar a patch
+
+2.          1.         0
+major       minor      patch
+
+major -> atualização que pode comprometer a compatibilidade
+minor -> adiciona novo recurso sem comprometer a compatibilidade
+patch -> correção de bugs
+
+utilizando a flag -E vai manter uma versão específica do modulo
+npm update -> atualiza os modulos
+npm install express --save-dev -> adiciona o modulo para dev dependecies
+npm install express@2.1.0 -> instala versão específica
+
+para desinstalar -> npm unistall express
+para ver os pacotes instalados -> npm ls --depth=0 (1 exibe mais uma pasta)
+verificar pacotes desatualizados -> npm outdated

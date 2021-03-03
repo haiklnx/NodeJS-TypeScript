@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gerador de senha</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Gerarador de senha</h1>
+    <div class="resultado">Selecione as opções</div>
+    <div>
+      <p>Total de caracteres <input value="20" type="number" min="1" max="20" class="quantidade"></p>
+      <p>Adicionar letras maiúsculas <input type="checkbox" class="maiuscula"></p>
+      <p>Adicionar letras minúsculas <input type="checkbox" class="minuscula"></p>
+      <p>Adicionar números <input type="checkbox" class="numero"></p>
+      <p>Adicionar simbolos <input type="checkbox" class="simbolo"></p>
+      <p><input type="button" class="btnGerarSenha" value="Gerar senha"></p>
+    </div>
+  </section>
+
+  <!-- vai ser importado apenas o bundle
+    que é o arquivo transformado -->
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>
