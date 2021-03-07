@@ -1,0 +1,27 @@
+<%# comentario %>
+    <!-- usado para incluir arquivos -->
+    <%- include('includes/head.ejs'); %>
+        <section class="container">
+            <h1>Modelo Webpack</h1>
+            <h2>
+                <%= titulo %> <br> <!-- vai exibir a tag html  \scape -->
+                    <%- titulo %> <br> <!-- vai executar a tag html -->
+            </h2>
+            <h3>
+                <!-- sem sinal vai servir para criar fluxos, if else for -->
+                <% numeros.forEach(num=> { %>
+                    <%= num %>
+                        <% }); %>
+            </h3>
+            <h4>
+                <!-- pegando o valor da variavel no middleware.js -->
+                <%- umaVariavelLocal %>
+            </h4>
+            <form action="/" method="post">
+                <label>Cliente</label>
+                <input type="text" name="cliente">
+                <button type="submit">enviar</button>
+            </form>
+        </section>
+
+        <%- include('includes/footer.ejs'); %>
