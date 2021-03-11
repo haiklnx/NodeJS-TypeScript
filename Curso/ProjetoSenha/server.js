@@ -20,7 +20,7 @@ const path = require('path'); // usado para pegar o caminho dos arquivos
 const helmet = require('helmet'); // recomedação do próprio express, área de segurança
 const csrf = require('csurf'); // tokens para os formulários, não deixa nenhum app externo postar nada na aplicação
 // middleware -> funções que são usadas na rota
-const { checkCrsfError, csrfMiddleware } = require('./src/middleware/middleware');
+const { middlewareGlobal, checkCrsfError, csrfMiddleware } = require('./src/middleware/middleware');
 const sessionOptions = session({
     secret: 'nodejs',
     store: MongoStore.create({ mongoUrl: process.env.CONNECTIONSTRING }),
@@ -42,6 +42,7 @@ app.use(express.static(path.resolve(__dirname, 'public'))); // arquivos estátic
 app.use(csrf());
 app.use(checkCrsfError);
 app.use(csrfMiddleware);
+app.use(middlewareGlobal);
 app.use(helmet());
 app.use(routes);
 
