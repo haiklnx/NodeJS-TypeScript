@@ -1,0 +1,37 @@
+<%- include('includes/head') %>
+    <%- include('includes/navBar') %>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8 my-3">
+                    <h1 class="text-center">Senhas</h1>
+                    <p class="text-center lead">Crie ou edite suas senhas.</p>
+
+                    <%- include('includes/messages') %>
+                        <form action="/senha/register" method="POST">
+                            <input type="hidden" name="_csrf" value=<%=csrfToken%>>
+                            <div class="form-group">
+                                <label>Site</label>
+                                <input value="<%= senha.site%>" type="text" class="form-control" name="site">
+                            </div>
+                            <div class="form-group">
+                                <label>Usuário</label>
+                                <input value="<%= senha.usuario%>" type="text" class="form-control" name="usuario">
+                            </div>
+                            <div class="form-group">
+                                <label>Senha</label>
+                                <input value="<%= senha.senha%>" type="password" class="form-control" name="senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </form>
+
+                </div>
+
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+        </div>
+        <%- include('includes/footer') %>
